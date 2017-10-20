@@ -20,6 +20,7 @@
     <h2>我自己的测试范围</h2>
     <ul>
       <li><router-link to="test">test</router-link></li>
+      <li><router-link to="nuxt">vue的SEO优化(Nuxt.js)</router-link></li>
     </ul>
   </div>
 </template>
