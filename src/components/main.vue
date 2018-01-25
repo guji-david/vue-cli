@@ -19,9 +19,26 @@
     </ul>
     <h2>我自己的测试范围</h2>
     <ul>
-      <li><router-link to="test">test</router-link></li>
+      <li><router-link to="eventBus">eventBus</router-link></li>
       <li><router-link to="nuxt">vue的SEO优化(Nuxt.js)</router-link></li>
     </ul>
+    <div>
+      <img src="../assets/logo.png">
+      <h2>Essential Links</h2>
+      <ul>
+        <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
+        <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
+        <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
+        <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
+      </ul>
+      <h2>Ecosystem</h2>
+      <ul>
+        <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
+        <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
+        <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
+        <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
+      </ul>
+    </div>
   </div>
 </template>
 
