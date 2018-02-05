@@ -21,6 +21,7 @@
     <ul>
       <li><router-link to="eventBus">eventBus</router-link></li>
       <li><router-link to="nuxt">vue的SEO优化(Nuxt.js)</router-link></li>
+      <li><router-link to="Promises">接口调试</router-link></li>
     </ul>
     <div>
       <img src="../assets/logo.png">

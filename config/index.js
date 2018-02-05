@@ -47,8 +47,13 @@ module.exports = {
     // 代理配置表，在这里可以配置特定的请求代理到对应的API接口
     proxyTable: {
       '/api': {
-        target: "http://192.168.30.137:9101",
-        pathRewrite: {"^/api" : "http://192.168.30.137:9101"} //后面可以使重写的新路径，一般不做更改 (此项必不可少)
+        target: "https://r-static.jintoushou.com",//  https://r-static.jintoushou.com
+        changeOrigin: true,
+        // secure: false,
+        headers: {
+          Referer: 'https://r-static.jintoushou.com'
+        },
+        pathRewrite: {"^/api" : "https://r-static.jintoushou.com"} //后面可以使重写的新路径，一般不做更改 (此项必不可少)
       },
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"
