@@ -35,7 +35,7 @@
     console.log(value);
   }
 
-  asyncPrint('hello world', 3000);
+//  asyncPrint('hello world', 3000);
 
 
 
