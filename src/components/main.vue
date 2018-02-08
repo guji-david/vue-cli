@@ -1,5 +1,14 @@
 <template>
   <div class="hello">
+    <h2>我自己的测试范围----------------------begin</h2>
+    <ul>
+      <li><router-link to="eventBus">eventBus</router-link></li>
+      <li><router-link to="nuxt">vue的SEO优化(Nuxt.js)</router-link></li>
+      <li><router-link to="Promises">接口调试</router-link></li>
+      <li><router-link to="ES6">ES6</router-link></li>
+      <li><router-link to="Vuex">Vuex</router-link></li>
+    </ul>
+    <h2>我自己的测试范围-----------------------end</h2>
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -17,13 +26,9 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
-    <h2>我自己的测试范围</h2>
-    <ul>
-      <li><router-link to="eventBus">eventBus</router-link></li>
-      <li><router-link to="nuxt">vue的SEO优化(Nuxt.js)</router-link></li>
-      <li><router-link to="Promises">接口调试</router-link></li>
-    </ul>
-    <div>
+
+
+    <!--<div>
       <img src="../assets/logo.png">
       <h2>Essential Links</h2>
       <ul>
@@ -39,7 +44,7 @@
         <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
         <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
       </ul>
-    </div>
+    </div>-->
   </div>
 </template>
 

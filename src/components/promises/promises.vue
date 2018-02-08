@@ -36,7 +36,6 @@ var iconv = require('iconv-lite');
 
           console.log(g.next(1000));
           console.log(g.next(8));
-//          console.log(g.next(8));
 //            this.getAjax('7d5a98d215c2126d7ebc92d69510f755');
         },
         methods: {

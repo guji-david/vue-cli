@@ -1,77 +1,24 @@
 <template>
-  <div class="test">
-    <section class="pay-mask" @click="close_mask" v-show="payshow">
-      <div class="container">
-        <div class="pay_title">请输入支付密码</div>
-        <div class="flex f-d-r pay_content">
-          <div v-for="(item,index) in inputList"class="ipt_pay">
-            <input type="password" maxlength="1"v-model="item.name" disabled>
-          </div>
-        </div>
-      </div>
-      <footer>
-        <!--<ul class="pay_btn">
-          <li v-for="i in 9"@click="btnpassword($event)">i</li>
-          <li class="b9"></li>
-          <li @click="btnpassword($event)">0</li>
-          <li class="b9" @click="btndelete">删除</li>
-        </ul>-->
-      </footer>
-    </section>
-
+  <div class="">
+      {{nuxt}}
   </div>
 
 </template>
 
 <script>
 export default {
-  name: 'test',
- /* props:{
-      payshow:{
-          type:Boolean,
-          default:false
-      }
-  },*/
+  name: 'nuxt',
+
   data () {
     return {
-      msg: 'vue支付密码效果',
-      inputList:[{name:""},{name:""},{name:""},{name:""},{name:""},{name:""}],
-      index:-1,
-      payshow:true
+      nuxt:"this is a nuxt"
     }
   },
   created(){},
   mounted(){
-      this.inputList[0].name.focus()
-//      $(".ipt_pay input:first").focus();
   },
   methods:{
-    btnpassword(e){
-        var obj=e.currentTarget;
-        var payinput=$(".ipt_pay input");
-        if(this.index<5){
-            this.index++;
-            $(payinput[this.index]).valueOf($(obj).text());
-        }
-      if(this.index==5){
-            var pay_pwd='';
-            var  payinput=$(".ipt_pay input");
-            for (var i=0;i<payinput.length;i++){
-              pay_pwd+=$(payinput[i]).val();
-            }
-        console.log(pay_pwd)
-      }
-    },
-    btndelete(){
-      var payinput=$(".ipt_pay input");
-      if(this.index>=0){
-        $(payinput[this.index]).val('');
-        this.index--;
-      }
-    },
-    close_mask(){
-//        this.payshow=false;
-    }
+
   }
 }
 </script>
