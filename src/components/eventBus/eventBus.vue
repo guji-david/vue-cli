@@ -6,7 +6,18 @@
         <button @click="jsSort()">js sort方法根据数组中对象的某一个属性值进行排序</button>
       </div>
     </div>
-
+    <br><br><br><br>
+    <div v-if="loginType">
+      <label>Username</label>
+      <input type="text" placeholder="Enter your username"key="username-input">
+    </div>
+    <div v-else>
+      <label>Email</label>
+      <input type="text" placeholder="Enter your email address" key="email-input">
+    </div>
+    <br><br><br>
+    <button @click="toggleLoginType() ">切换</button>
+    <br><br><br>
     <eventBus1></eventBus1>
     <eventBus2></eventBus2>
   </div>
@@ -44,6 +55,7 @@ export default {
   name: 'eventBus',
   data () {
     return {
+      loginType:true,
       message:'',
        arr: [
         {name:'zopp',age:0},
@@ -64,6 +76,9 @@ export default {
   mounted(){
   },
   methods:{
+    toggleLoginType(){
+        this.loginType=!this.loginType;
+    },
     toBus () {
       // 事件名字自定义，用不同的名字区别事件
         this.$root.Bus.$emit('on1', this.message)  },

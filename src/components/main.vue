@@ -1,12 +1,21 @@
 <template>
   <div class="hello">
+    <!-- 使用自定义组件 -->
+
     <h2>我自己的测试范围----------------------begin</h2>
     <ul>
+      <transition name="bounce">
+        <router-view></router-view>
+      </transition>
       <li><router-link to="eventBus">eventBus</router-link></li>
       <li><router-link to="nuxt">vue的SEO优化(Nuxt.js)</router-link></li>
-      <li><router-link to="Promises">接口调试</router-link></li>
+      <li><router-link to="promises">接口调试</router-link></li>
       <li><router-link to="ES6">ES6</router-link></li>
-      <li><router-link to="Vuex">Vuex</router-link></li>
+      <li><router-link to="vuex">Vuex</router-link></li>
+      <li><router-link to="reisze">window.onresize的问题</router-link></li>
+      <li><router-link to="mySchart">vue.js 的图表组件</router-link></li>
+      <li><router-link to="props">父子组件及slot演示</router-link></li>
+      <li><router-link to="virtualList">virtualList虚拟列表</router-link></li>
     </ul>
     <h2>我自己的测试范围-----------------------end</h2>
     <h1>{{ msg }}</h1>

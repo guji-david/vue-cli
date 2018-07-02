@@ -7,6 +7,10 @@ import $ from 'jquery'
 import store from'./store/index.js'
 Vue.config.productionTip = false;
 /* eslint-disable no-new */
+
+// 引入自定义组件。index.js是组件的默认入口 import Loading from '../components/loading'
+import Loading from './components/loading/Loading.vue'
+Vue.use(Loading);
 new Vue({
   el: '#app',
   data:{
