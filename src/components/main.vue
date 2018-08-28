@@ -16,6 +16,7 @@
       <li><router-link to="mySchart">vue.js 的图表组件</router-link></li>
       <li><router-link to="props">父子组件及slot演示</router-link></li>
       <li><router-link to="virtualList">virtualList虚拟列表</router-link></li>
+      <li><router-link to="myModule">我的模块调试哦</router-link></li>
     </ul>
     <h2>我自己的测试范围-----------------------end</h2>
     <h1>{{ msg }}</h1>
