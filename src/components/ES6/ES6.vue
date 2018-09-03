@@ -30,7 +30,7 @@
           }
 //          go(10);
           let g=go(10);
-          console.log(g.next().value);
+//          console.log(g.next().value);
           console.log(g.next(100).value);
           console.log(g.next(1000));
           console.log(g.next(8));
