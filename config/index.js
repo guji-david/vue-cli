@@ -7,9 +7,9 @@ module.exports = {
     // 环境变量
     env: ENV,
     // html入口文件
-    index: path.resolve(__dirname, '../dist/'+ENV.FILE_NAME+'/index.html'),
+    index: path.resolve(__dirname, '../dist/index.html'),
     // 产品文件的存放路径
-    assetsRoot: path.resolve(__dirname, '../dist/'+ENV.FILE_NAME),
+    assetsRoot: path.resolve(__dirname, '../dist/'),
     // 二级目录，存放静态资源文件的目录，位于dist文件夹下
     assetsSubDirectory: 'static',
     // 发布路径，如果构建后的产品文件有用于发布CDN或者放到其他域名的服务器，可以在这里进行设置
@@ -37,7 +37,7 @@ module.exports = {
     // 环境变量
     env: require('./dev.env'),
     // dev-server监听的端口
-    port: 1000,
+    port: 2000,//
     // 是否自动打开浏览器
     autoOpenBrowser: true,
     // 静态资源文件夹

@@ -45,6 +45,25 @@ module.exports = {
   // 不同类型模块的处理规则
   module: {
     rules: [
+      // {
+      //   test: /\.vue$/,
+      //   loader: 'veui-loader',
+      //   enforce: 'pre',
+      //   options: {
+      //     modules: [
+      //       {
+      //         package: 'veui-theme-one',
+      //         fileName: '${module}.less'
+      //       },
+      //       {
+      //         package: 'veui-theme-one',
+      //         fileName: '${module}.js',
+      //         transform: false
+      //       }
+      //     ]
+      //   },
+      //   include: [resolve('node_modules/veui')]
+      // },
       {// 对所有.vue文件使用vue-loader进行编译
         test: /\.vue$/,
         loader: 'vue-loader',
@@ -53,7 +72,12 @@ module.exports = {
       {// 对src和test文件夹下的.js文件使用babel-loader将es6+的代码转成es5
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [resolve('src'), resolve('test')]
+        // include: [resolve('src'), resolve('test')]
+        include: [
+          resolve('node_modules/veui'),
+          resolve('node_modules/vue-awesome'),
+          resolve('node_modules/resize-detector')
+        ]
       },
       {// 对图片资源文件使用url-loader
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,

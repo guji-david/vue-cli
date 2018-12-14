@@ -10,7 +10,7 @@ Vue.config.productionTip = false;
 
 // 引入自定义组件。index.js是组件的默认入口 import Loading from '../components/loading'
 import Loading from './components/loading/Loading.vue'
-Vue.use(Loading);
+// Vue.use(Loading);
 new Vue({
   el: '#app',
   data:{

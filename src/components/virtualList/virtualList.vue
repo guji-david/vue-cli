@@ -12,23 +12,13 @@
 
   export default {
     name: 'ListView',
-    props: {
-      data: { type: Array, required: true },
-      itemHeight: { type: Number, default: 30 } },
+
     computed: {
-      /*contentHeight() {
-            return this.data.length * this.itemHeight + 'px'; } },*/
       contentHeight() {
-          const { data, itemSizeGetter } =this;
-          let total = 0;
-          for (let i = 0, j = data.length; i < j; i++) {
-              total += itemSizeGetter.call(null, data[i], i);
-          }
-          return total;
-          }
-          },
-    mounted() {
-        this.updateVisibleData(); },
+            return this.data.length * this.itemHeight + 'px';
+      }
+    },
+
     data() {
         return {
             visibleData: []
