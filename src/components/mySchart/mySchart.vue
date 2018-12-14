@@ -31,6 +31,9 @@
     },
     components:{
       schart
+    },
+    mounted () {
+        console.log($)
     }
   }
 </script>

@@ -36,7 +36,8 @@
 //           console.log(g.next(100).value);
 //           console.log(g.next(1000));
 //           console.log(g.next(8));
-          this.del()
+          let g=go(10);
+//          console.log(g.next().value);
         },
         methods: {
           del: function () {
