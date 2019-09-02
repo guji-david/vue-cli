@@ -11,7 +11,9 @@ import Reisze from '@/components/reisze/reisze'
 import MySchart from '@/components/mySchart/mySchart'
 import Props from '@/components/props/props'
 import VirtualList from '@/components/virtualList/virtualList'
-import MyModule from '@/components/myModule/myModule'
+import Functional from '@/components/functional/functional1'
+import ProvideInject from '@/components/provide-inject/provide-inject'
+import Form from '@/components/form/form-main'
 
 
 
@@ -71,9 +73,19 @@ export default new Router({
       component: VirtualList
     },
     {
-      path: '/myModule',
-      name: 'MyModule',
-      component: MyModule
+      path: '/functional',
+      name: 'Functional',
+      component: Functional
+    },
+    {
+      path: '/provideInject',
+      name: 'ProvideInject',
+      component: ProvideInject
+    },
+    {
+      path: '/form',
+      name: 'Form',
+      component: Form
     },
   ]
 })

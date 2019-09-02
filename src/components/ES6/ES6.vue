@@ -11,7 +11,8 @@
     export default {
         data(){
             return {
-              msg:'请看控制台'
+              msg:'请看控制台',
+              confirmOptions:""
             }
         },
         components: {
@@ -36,7 +37,7 @@
 //           console.log(g.next(100).value);
 //           console.log(g.next(1000));
 //           console.log(g.next(8));
-          let g=go(10);
+//           let g=go(10);
 //          console.log(g.next().value);
         },
         methods: {

@@ -14,6 +14,7 @@
   export default {
     data() {
       return {
+        isShow: true,
         canvasId: 'myCanvas',
         type: 'pie',// bar line ring pie
         width: 500,
@@ -37,3 +38,8 @@
     }
   }
 </script>
+<style>
+  .span {
+    display: none;
+  }
+</style>

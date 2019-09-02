@@ -14,11 +14,20 @@ export default {
       nuxt:"this is a nuxt"
     }
   },
-  created(){},
+  created(){
+    //这里我将icon的list给保存下来了
+    this.$root.Bus.$on('get', this.myhandle)
+  },
   mounted(){
   },
   methods:{
-
+    myhandle(val) {
+      console.log(val, '这是从上个页面传递过来的参数')
+    }
+  },
+  beforeDestroy (){
+    this.$root.Bus.$off('get', this.myhandle)
+    console.log( '使用off销毁bus注册的事件')
   }
 }
 </script>

@@ -37,7 +37,7 @@ module.exports = {
     // 环境变量
     env: require('./dev.env'),
     // dev-server监听的端口
-    port: 2000,//
+    port: 1233,//
     // 是否自动打开浏览器
     autoOpenBrowser: true,
     // 静态资源文件夹
@@ -47,13 +47,13 @@ module.exports = {
     // 代理配置表，在这里可以配置特定的请求代理到对应的API接口
     proxyTable: {
       '/api': {
-        target: "https://r-static.jintoushou.com",//  https://r-static.jintoushou.com
+        target: "http://wangxin.cn:2200",//
         changeOrigin: true,
-        // secure: false,
+        secure: false,
         headers: {
-          Referer: 'https://r-static.jintoushou.com'
+          Referer: ''
         },
-        pathRewrite: {"^/api" : "https://r-static.jintoushou.com"} //后面可以使重写的新路径，一般不做更改 (此项必不可少)
+        pathRewrite: {"^/api" : "http://wangxin.cn:2200"} //后面可以使重写的新路径，一般不做更改 (此项必不可少)
       },
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"

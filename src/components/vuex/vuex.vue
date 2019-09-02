@@ -35,7 +35,8 @@
       components: {},
         mounted () {
           //触发一下函数使加载页面时载入
-          this.getData()
+          // this.getData();
+          this.add();
         },
         methods: {
 
