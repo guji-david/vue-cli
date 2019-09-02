@@ -54,7 +54,6 @@ export default new Vuex.Store({
     age: 10
   },
   getters: {
-    //data的computed
     myAge(state) {
       return state.age + 10;
     }
