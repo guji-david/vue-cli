@@ -14,6 +14,8 @@ import VirtualList from '@/components/virtualList/virtualList'
 import Functional from '@/components/functional/functional1'
 import ProvideInject from '@/components/provide-inject/provide-inject'
 import Form from '@/components/form/form-main'
+import Carousel from '@/components/carousel/carousel'
+import Vmodel from '@/components/v-model/v-model'
 
 
 
@@ -86,6 +88,16 @@ export default new Router({
       path: '/form',
       name: 'Form',
       component: Form
+    },
+    {
+      path: '/carousel',
+      name: 'Carousel',
+      component: Carousel
+    },
+    {
+      path: '/vmodel',
+      name: 'Vmodel',
+      component: Vmodel
     },
   ]
 })

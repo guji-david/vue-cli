@@ -15,11 +15,14 @@
       <li><router-link to="reisze">window.onresize的问题</router-link></li>
       <li><router-link to="mySchart">vue.js 的图表组件</router-link></li>
       <li><router-link to="props">父子组件及slot演示</router-link></li>
+      <br>
       <li><router-link to="virtualList">virtualList虚拟列表</router-link></li>
       <li><router-link to="myModule">我的模块调试哦</router-link></li>
       <li><router-link to="functional">函数式组件</router-link></li>
       <li><router-link to="provideInject">provide/inject 组件的测试</router-link></li>
       <li><router-link to="form">自己的form表单</router-link></li>
+      <li><router-link to="carousel">carousel</router-link></li>
+      <li><router-link to="vmodel">组件的v-model</router-link></li>
     </ul>
     <h2>我自己的测试范围-----------------------end</h2>
     <h1>{{ msg }}</h1>
