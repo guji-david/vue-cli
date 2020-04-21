@@ -23,6 +23,8 @@
       <li><router-link to="form">自己的form表单</router-link></li>
       <li><router-link to="carousel">carousel</router-link></li>
       <li><router-link to="vmodel">组件的v-model</router-link></li>
+      <li><router-link to="listener-attrs">父子孙</router-link></li>
+
     </ul>
     <h2>我自己的测试范围-----------------------end</h2>
     <h1>{{ msg }}</h1>

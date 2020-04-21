@@ -16,6 +16,7 @@ import ProvideInject from '@/components/provide-inject/provide-inject'
 import Form from '@/components/form/form-main'
 import Carousel from '@/components/carousel/carousel'
 import Vmodel from '@/components/v-model/v-model'
+import ListenerAttrs from '@/components/listener attrs/father'
 
 
 
@@ -98,6 +99,11 @@ export default new Router({
       path: '/vmodel',
       name: 'Vmodel',
       component: Vmodel
+    },
+    {
+      path: '/listener-attrs',
+      name: 'ListenerAttrs',
+      component: ListenerAttrs
     },
   ]
 })
